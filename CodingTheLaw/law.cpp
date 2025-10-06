@@ -63,13 +63,13 @@ int main () {
             counter--;
         }
         if (time2[i] < time1[counter+1]) {
-            if (speed[i] > 3.0 + speedLimit[counter] && speedLimit[counter] > 30.0) {
+            if (speed[i] > 13.0 + speedLimit[counter] && speedLimit[counter] > 30.0) {
                 if (time2[i] - last_time > 5.0) {
                     tickets++;
                     last_time = time2[i];
                 }
             }
-            else if (speed[i] > 3.0 + speedLimit[counter] && speedLimit[counter] <= 30.0) {
+            else if (speed[i] > 8.0 + speedLimit[counter] && speedLimit[counter] <= 30.0) {
                 if (time2[i] - last_time > 5.0) {
                     tickets++;
                     last_time = time2[i];
